@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Water Estimation App</title>
+</head>
+
+<body style="background-color:baby blue;">
+    <h1 style ="text-align:center"><b>DEE'S WATER APP</b></h1>
+    
+    <img src="water.jpg" style="width:300px; height:400px; border-image:fill">
+    
+    <br>
+    <br>
+      <h2><b>APP DETAILS</b></h2>
+    <p>This app helps you navigate through submit their <br>
+       monthly water readings and receive their monthly water bills<br>
+       submit their meter reading, and the systemn the computes what <br>
+       the user is supposed to pay        
+       <br>
+       <br>
+       Please log into the application with your username(should be a combination of <br>
+       your first name and last name e.g dbaidoo) and password(Should be your meter number)
+        </p>
+
+       <!-- Right Hand Side of the Login Page ** WRK BY FL / BS -->
+      <div class="col-sm-4 col-xs-12">
+        <div class="login-box">        
+          <h1>Login</h1>
+          <div class="login-error">
+          </div>
+          <form class="loginform" method="POST" name="loginl" action="indexl?login-err=1">
+            <div class="form-group">
+              <input type="text" class="form-control" name="username" placeholder="Username" size="20">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="password" name="password" placeholder="Password" size="20">
+            </div>
+            <div class="form-group">
+              <input type="checkbox" id="show-password" value="ON"> <label for="show-password">Show password</label>
+            </div>
+            <button type="submit" class="btn btn-default">Login</button>   
+            <div class="gap-10"></div>
+            <div class="gap-10">
+           </div>
+           <script language="JavaScript">
+              function DocOnLoad()
+                {
+                  if (document.loginl.username) {
+                              document.loginl.username.focus();
+                      }
+                }
+                 DocOnLoad();
+            </script>  
+          </form>    
+          
+   <!--================ End Header Menu Area =================-->       
+
+   <div class="form-row">
+    <div class="sub-title">
+        Before we begin, how many people, including children and babies, live here?
+    </div>
+    <div class="form-row">
+        <div class="form-group nb-row-padding">
+            <div class="nb-col-6">
+                <div class="form-select" tabindex="0">
+                    <select class="form-control number-occupants slbox">
+                        <option value="0"></option>
+                    </select>
+                    <label class="form-lable">Please select</label>
+                    <span class="form-line"></span>
+                </div>
+                <span class="form-error"></span>
+            </div>
+            <div class="nb-col-6"></div>
+        </div>
+    </div>
+</div>
+<div class="form-row usage-inputs">
+    <div class="sub-title">
+        In a week, how often does your household:
+    </div>
+    <div>
+      <div class="wp-household">
+          <p>Flush the toilet</p>
+          <input name="flush-toilet" placeholder="0" maxlength="4" pattern="d*" type="tel">
+      </div>
+      <div class="wp-household">
+        <p>Take a bath</p>
+        <input name="bath" placeholder="0" maxlength="4" pattern="d*" type="tel">
+    </div>
+    <div class="wp-household">
+        <p>Have a shower</p>
+        <input name="shower" placeholder="0" maxlength="4" pattern="d*" type="tel">
+    </div>
+    <div class="wp-household">
+        <p>Use the washing machine</p>
+        <input name="washing-machine" placeholder="0" maxlength="4" pattern="d*" type="tel">
+    </div>
+    <div class="wp-household">
+        <p>Fill the kitchen sink</p>
+        <input name="sink" placeholder="0" maxlength="4" pattern="d*" type="tel">
+    </div>
+    <div class="wp-household">
+        <p>Use the dishwasher</p>
+        <input name="dishwasher" placeholder="0" maxlength="4" pattern="d*" type="tel">
+    </div>
+    <div class="wp-household">
+        <div>Use a garden hose (in minutes)</div>
+        <input name="hose" placeholder="0" maxlength="4" pattern="d*" type="tel">
+    </div>
+</div>
+</div>
+<div class="form-row font-18"><p>Ready for your results? Hit the button below!</p></div>
+            <div class="form-row">
+                <button class="nb-btn nb-btn-block btn-calculate">Estimate my bill</button>
+            </div>
+            <div class="form-row calculation-results hidden">
+                <div class="wp-usage-box bgblue-light account__box text-center">
+                    <div class="form-row mb20">
+                        Your estimated usage
+                        <div class="nb-tooltip">
+                            <a href="javascript:void(0)" class="tooltip-btn" tabindex="-1"><i class="fal fa-info-circle"></i></a>
+                            <div class="tooltip-inner">
+                                <span class="tooltip-label">We&#39;ve based this result on the information you gave us</span>
+                                <a href="javascript:void(0)" class="tooltip-close"><i class="fal fa-times"></i></a>
+                            </div>
+                        </div>
+    
+
+
+
+
+
+
+  </body>
+
+
+
+
+
+
+
+
+
+
+
+</html>  
+
+
+
+
+    
+    
+    
